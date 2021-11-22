@@ -43,28 +43,7 @@ public class Tree : MonoBehaviour
 
             /* moves branches down */
             moveBranchesDown();
-
-            GameController.totalNumberOfCut++;
-            if (GameController.totalNumberOfCut % 2 == 0)
-            {
-                gameController.branchesSpawned[treeBranchToFade].GetComponent<Animator>().Play("dx_tree_branch_fall");
-
-                /* makes tree branch fall */
-                treeBranchToFade = (GameController.totalNumberOfCut / 2);
-            }
         }
-    }
-
-    public void fadeBranch()
-    {
-        GameController.totalNumberOfCut++;
-            if (GameController.totalNumberOfCut % 2 == 0)
-            {
-                gameController.branchesSpawned[treeBranchToFade].GetComponent<Animator>().Play("dx_tree_branch_fall");
-
-                /* makes tree branch fall */
-                treeBranchToFade = (GameController.totalNumberOfCut / 2);
-            }
     }
 
     public void moveBranchesDown()

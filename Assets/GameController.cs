@@ -108,7 +108,7 @@ public class GameController : MonoBehaviour
             {
                 /* saves new highscore */
                 highScoreTextField.gameObject.SetActive(true);
-                highScoreTextField.GetComponent<Text>().text = "New Highscore!\n"+highscore.ToString();
+                highScoreTextField.GetComponent<Text>().text = "New Highscore!\n"+ points_scored_handler.points.ToString();
                 highscore = points_scored_handler.points;
                 PlayerPrefs.SetInt("highscore", points_scored_handler.points);
                 PlayerPrefs.Save();
