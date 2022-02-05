@@ -3,6 +3,8 @@ Mobile game, made with Unity, about a lumberjack cutting trees.
 
 <img src="./static/video6048349018411502397.gif" width="300" height="580" />
 
+## Getting Started
+
 ### Prerequisites
 Android is required to run the game.
 
